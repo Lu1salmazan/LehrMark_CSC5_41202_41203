@@ -2,7 +2,7 @@
     File:   main.cpp
     Author: Dr. Mark E. Lehr
     Created on January 4, 2016, 10:18 AM
-    Purpose:  Check out IDE
+    Purpose:  Check out IDE, Helloworld
  */
 
 //System Libraries
