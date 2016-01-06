@@ -17,7 +17,8 @@ using namespace std;
 //Execution Begins Here
 int main(int argc, char** argv) {
     //Declare and initialize variables
-    char letter='C';
+    //char letter='C';
+    char letter=67;
     
     //Output the results
     cout<<"  "<<letter<<letter<<letter<<endl;
