@@ -2,7 +2,7 @@
     File:   main.cpp
     Author: Dr. Mark E. Lehr
     Created on January 19, 2016, 10:40 AM
-    Purpose:  Calculate e^x using a tolerance and in 1 line
+    Purpose:  Calculate e^x using a tolerance
  */
 
 //System Libraries
@@ -23,15 +23,17 @@ int main(int argc, char** argv) {
     cout<<endl<<"Solution to Savitch 8thEd Chap3 Prob11"<<endl;
     cout<<endl<<"The finite sum for e^x"<<endl<<endl;
     //Declare and initialize variables for etox
-    const unsigned char nTerms=13;
-    float tol=1e-3f,term=1,etox=1,x;//e^x
-    float nTerm;//Counter to determine how many terms
+    float tol=1e-5f,term=1,etox=1,x;//e^x
+    float nTerm=1;//Counter to determine how many terms
     //Input the value x
     cout<<"Input x of e^x computation"<<endl;
     cin>>x;
     
     //Calculate e^x
-    for(nTerm=1;term>tol;term*=x/nTerm++,etox+=term);
+    do{
+        term*=x/nTerm++;
+        etox+=term;
+    }while(term>tol);
     
     //Output the results
     cout<<"The exact  value of e^"<<x<<"="<<exp(x)<<endl;

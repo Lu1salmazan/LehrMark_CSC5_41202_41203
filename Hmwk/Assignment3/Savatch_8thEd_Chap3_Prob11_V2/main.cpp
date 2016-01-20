@@ -23,7 +23,7 @@ int main(int argc, char** argv) {
     cout<<endl<<"Solution to Savitch 8thEd Chap3 Prob11"<<endl;
     cout<<endl<<"The finite sum for e^x"<<endl<<endl;
     //Declare and initialize variables for etox
-    const unsigned char nTerms=13;
+    const unsigned char NTERMS=13;//Unsigned Integer for N! is 13!
     float etox=1,x;//e^x
     
     //Input the value x
@@ -31,7 +31,7 @@ int main(int argc, char** argv) {
     cin>>x;
     
     //Calculate e^x
-    for(int n=1;n<=nTerms;n++){
+    for(int n=1;n<=NTERMS;n++){
         //Declare and initialize variables
         unsigned int factN=1;//N and N
 

@@ -1,7 +1,7 @@
 /* 
     File:   main.cpp
     Author: Dr. Mark E. Lehr
-    Created on January 19, 2016, 8:35 AM
+    Created on January 19, 2016, 8:35 PM
     Purpose:  Menu
  */
 
@@ -14,6 +14,7 @@ using namespace std;
 //User Libraries
 
 //Global Constants
+const float PI=4*atan(1);//Universal Constant 3.1415 etc
 
 //Function prototypes
 
@@ -29,7 +30,7 @@ int main(int argc, char** argv) {
         cout<<"Assignment 3 Problem Set"<<endl;
         cout<<"Type 1 to Display Savitch 8thEd Chap3 Prob10"<<endl;
         cout<<"Type 2 to Display Savitch 8thEd Chap3 Prob11"<<endl;
-        cout<<"Type 3 to Display Problem 3"<<endl;
+        cout<<"Type 3 to Display Savitch 8thEd Chap3 Prob12"<<endl;
         cout<<"Type anything else to exit "<<endl<<endl;
         cin>>nSoltn;
         //Solutions to all the problems
@@ -106,7 +107,30 @@ int main(int argc, char** argv) {
                 break;
             }
             case 3:{
-                cout<<endl<<"Solution to Problem 3"<<endl<<endl;
+                //The problem to solve
+                cout<<endl<<"Solution to Savitch 8thEd Chap3 Prob12"<<endl;
+                cout<<endl<<"The finite sum for PI"<<endl<<endl;
+
+                //Declare and initialize variables for apprxPI
+                float apprxPI=1;    //Approximate value of PI to start
+                unsigned int nTerms;//Number of terms to limit sum of PI
+                char sign=-1;       //Alternating sign of the PI sequence
+
+                //Input the number of terms in the sequence
+                cout<<"Input number of Terms to approximate PI"<<endl;
+                cin>>nTerms;
+
+                //Approximate PI/4
+                for(int i=2,j=3;i<=nTerms;i++,j+=2){
+                    apprxPI+=(sign/static_cast<float>(j));
+                    sign*=-1;
+                }
+                apprxPI*=4;//Multiply by 4 once to approximate PI
+
+                //Output the results
+                cout<<"The exact  value of PI="<<PI<<endl;
+                cout<<"The number of terms it took to approx PI="<<nTerms<<endl;
+                cout<<"The approx value of PI="<<apprxPI<<endl<<endl;
                 break;
             }
             default:{
