@@ -65,6 +65,7 @@ int main(int argc, char** argv) {
     cout<<"10 was thrown "<<frq10<<" times"<<endl;
     cout<<"11 was thrown "<<frq11<<" times"<<endl;
     cout<<"12 was thrown "<<frq12<<" times"<<endl;
+    cout<<"The total number of throws = "<<total<<endl;
     
     //Exit stage right
     return 0;

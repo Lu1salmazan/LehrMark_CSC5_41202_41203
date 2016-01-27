@@ -42,7 +42,7 @@ int main(int argc, char** argv) {
             default: cout<<"Not Possible"<<endl;
         }
     }
-    total=frq2+frq3+frq4+frq5+frq6;
+    total=frq1+frq2+frq3+frq4+frq5+frq6;
     
     //Output the results
     cout<<"The throw statistics are"<<endl;
@@ -52,6 +52,7 @@ int main(int argc, char** argv) {
     cout<<"4 was thrown "<<frq4<<" times"<<endl;
     cout<<"5 was thrown "<<frq5<<" times"<<endl;
     cout<<"6 was thrown "<<frq6<<" times"<<endl;
+    cout<<"The total throws was = "<<total<<endl;
     
     //Exit stage right
     return 0;

@@ -23,7 +23,7 @@ int pow(int,int);
 int main(int argc, char** argv) {
     //Variables to be using in timing
     //Beginning and Ending of the integer vs. double function
-    unsigned int begi,endi,begd,endd,loop=100000000;
+    unsigned int begi,endi,begd,endd,loop=200000000;
     
     //Declare and initialize variables
     int x;//Base of the problem
