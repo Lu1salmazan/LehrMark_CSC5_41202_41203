@@ -20,6 +20,9 @@ const float PI=4*atan(1);//Universal Constant 3.1415 etc
 void problem1();
 void problem2();
 void problem3();
+void problem4();
+void problem5();
+void problem6();
 
 //Execution Begins Here
 int main(int argc, char** argv) {
@@ -34,6 +37,9 @@ int main(int argc, char** argv) {
         cout<<"Type 1 to Display Savitch 8thEd Chap3 Prob10"<<endl;
         cout<<"Type 2 to Display Savitch 8thEd Chap3 Prob11"<<endl;
         cout<<"Type 3 to Display Savitch 8thEd Chap3 Prob12"<<endl;
+        cout<<"Type 4 to Display Stub"<<endl;
+        cout<<"Type 5 to Display Stub"<<endl;
+        cout<<"Type 6 to Display Stub"<<endl;
         cout<<"Type anything else to exit "<<endl<<endl;
         cin>>nSoltn;
         //Solutions to all the problems
@@ -41,6 +47,9 @@ int main(int argc, char** argv) {
             case 1:{problem1();break;}
             case 2:{problem2();break;}
             case 3:{problem3();break;}
+            case 4:{problem4();break;}
+            case 5:{problem5();break;}
+            case 6:{problem6();break;}
             default:{
                 cout<<"Exiting the Program"<<endl;
                 reDsply=false;
@@ -50,6 +59,16 @@ int main(int argc, char** argv) {
 
     //Exit stage right
     return 0;
+}
+
+void problem4(){
+    cout<<"We are in function problem 4"<<endl<<endl;
+}
+void problem5(){
+    cout<<"We are in function problem 5"<<endl<<endl;
+}
+void problem6(){
+    cout<<"We are in function problem 6"<<endl<<endl;
 }
 
 /******************************************************************************/
