@@ -9,19 +9,19 @@ CND_DISTDIR=dist
 # Debug configuration
 CND_PLATFORM_Debug=Cygwin_4.x-Windows
 CND_ARTIFACT_DIR_Debug=dist/Debug/Cygwin_4.x-Windows
-CND_ARTIFACT_NAME_Debug=marksort_v1
-CND_ARTIFACT_PATH_Debug=dist/Debug/Cygwin_4.x-Windows/marksort_v1
+CND_ARTIFACT_NAME_Debug=marksort_v2
+CND_ARTIFACT_PATH_Debug=dist/Debug/Cygwin_4.x-Windows/marksort_v2
 CND_PACKAGE_DIR_Debug=dist/Debug/Cygwin_4.x-Windows/package
-CND_PACKAGE_NAME_Debug=marksortv1.tar
-CND_PACKAGE_PATH_Debug=dist/Debug/Cygwin_4.x-Windows/package/marksortv1.tar
+CND_PACKAGE_NAME_Debug=marksortv2.tar
+CND_PACKAGE_PATH_Debug=dist/Debug/Cygwin_4.x-Windows/package/marksortv2.tar
 # Release configuration
 CND_PLATFORM_Release=Cygwin_4.x-Windows
 CND_ARTIFACT_DIR_Release=dist/Release/Cygwin_4.x-Windows
-CND_ARTIFACT_NAME_Release=marksort_v1
-CND_ARTIFACT_PATH_Release=dist/Release/Cygwin_4.x-Windows/marksort_v1
+CND_ARTIFACT_NAME_Release=marksort_v2
+CND_ARTIFACT_PATH_Release=dist/Release/Cygwin_4.x-Windows/marksort_v2
 CND_PACKAGE_DIR_Release=dist/Release/Cygwin_4.x-Windows/package
-CND_PACKAGE_NAME_Release=marksortv1.tar
-CND_PACKAGE_PATH_Release=dist/Release/Cygwin_4.x-Windows/package/marksortv1.tar
+CND_PACKAGE_NAME_Release=marksortv2.tar
+CND_PACKAGE_PATH_Release=dist/Release/Cygwin_4.x-Windows/package/marksortv2.tar
 #
 # include compiler specific variables
 #

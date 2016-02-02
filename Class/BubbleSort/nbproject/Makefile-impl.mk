@@ -24,7 +24,7 @@ CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}
 
 
 # Project Name
-PROJECTNAME=MarkSort_V1
+PROJECTNAME=BubbleSort
 
 # Active Configuration
 DEFAULTCONF=Debug
