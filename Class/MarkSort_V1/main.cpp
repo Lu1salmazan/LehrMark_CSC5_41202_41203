@@ -58,7 +58,8 @@ int main(int argc, char** argv) {
 //  a->Sorted Array
 //******************************************************************************
 void markSrt(int a[],int n){
-    //Loop and compare
+    //Find smallest in each successive list
+    //From the beginning of the list to the end
     for(int i=0;i<n-1;i++){
         lstSml(a,n,i);
     }
