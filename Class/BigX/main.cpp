@@ -134,7 +134,7 @@ int fillAry2(char a[][COL],int ROW){
 //******************************************************************************
 int fillAry1(char a[][COL],int ROW){
     //Randomly choose how many rows and columns
-    int row_col=rand()%7+3;//[2,9]
+    int row_col=rand()%7+3;//[3,9]
     //Fill the entire table with spaces
     for(int row=0;row<row_col;row++){
         for(int col=0;col<row_col;col++){

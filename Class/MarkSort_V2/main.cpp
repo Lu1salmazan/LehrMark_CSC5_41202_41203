@@ -20,8 +20,6 @@ using namespace std;
 //Function prototypes
 void fillAry(int [],int);
 void prntAry(int [],int,int);
-void swap(int &,int &);
-void lstSml(int [],int, int);
 void markSrt(int [],int);
 
 //Execution Begins Here
