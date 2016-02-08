@@ -23,6 +23,7 @@ const int ROW=30;
 void readAry(char [][ROW][COL]);
 void prntAry(char [][ROW][COL],int,bool);
 void gner8(char [][ROW][COL],int,bool);
+void pause(int);
 
 //Execution Begins Here
 int main(int argc, char** argv) {
@@ -39,10 +40,28 @@ int main(int argc, char** argv) {
     for(int gen=1;gen<=nGen;gen++){
         gner8(array,TABLES,gen%2);
         prntAry(array,TABLES,gen%2);
+        cout<<"Generation = "<<gen<<endl;
+        pause(1);
     }
     
     //Exit stage right
     return 0;
+}
+    
+//000000011111111112222222222333333333344444444445555555555666666666677777777778
+//345678901234567890123456789012345678901234567890123456789012345678901234567890
+//                     Pause
+//Inputs:
+//  sec->How man seconds to pause
+
+//******************************************************************************
+void pause(int sec){
+    //Loop until pause is met
+    unsigned int beg=time(0);
+    unsigned int end=time(0);
+    do{
+        end=time(0);
+    }while(sec>(end-beg));
 }
 
 //000000011111111112222222222333333333344444444445555555555666666666677777777778
@@ -64,7 +83,6 @@ void prntAry(char a[][ROW][COL],int tab,bool which){
         }
         cout<<endl;
     }
-    cout<<endl;
 }
 
 
@@ -108,6 +126,7 @@ void gner8(char a[][ROW][COL],int tables,bool tab){
     //Perform the 4 rules
     for(int row=1;row<ROW-1;row++){
         for(int col=1;col<COL-1;col++){
+            a[tab][row][col]='-';
             int neighbor=((a[!tab][row-1][col-1]=='X'?1:0)+
                          (a[!tab][row-1][col]=='X'?1:0)+
                          (a[!tab][row-1][col+1]=='X'?1:0)+
@@ -118,7 +137,7 @@ void gner8(char a[][ROW][COL],int tables,bool tab){
                          (a[!tab][row+1][col+1]=='X'?1:0));
             if(neighbor<=1)a[tab][row][col]='-';
             if(neighbor>=4)a[tab][row][col]='-';
-            if(neighbor==2||neighbor==3&&a[!tab][row][col]=='X')a[tab][row][col]='X';
+            if((neighbor==2||neighbor==3)&&(a[!tab][row][col]=='X'))a[tab][row][col]='X';
             if(neighbor==3&&a[!tab][row][col]=='-')a[tab][row][col]='X';
         }
     }
