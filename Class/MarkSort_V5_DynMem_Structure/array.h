@@ -1,8 +1,8 @@
 /* 
  * File:   array.h
- * Author: rcc
- *
+ * Author: Dr. Mark E. Lehr
  * Created on February 9, 2016, 9:50 AM
+ * Purpose:  To combine the array with its size
  */
 
 #ifndef ARRAY_H
